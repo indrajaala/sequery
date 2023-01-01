@@ -9,8 +9,8 @@
 
     <div class="row items-center q-mt-lg">
       <q-select filled v-model="query" :options="options" label="Select a query" style="width: 250px"/>
-      <q-btn @click="runQuery" class="q-mx-lg" round color="black" icon="mdi-play"/>
-      <q-btn @click="clearQuery" class="q-ml-auto" color="red" label="Clear Query"/>
+      <q-btn @click="runQuery" class="run-query q-mx-lg" round color="black" icon="mdi-play"/>
+      <q-btn @click="clearQuery" class="clear-query q-ml-auto" color="red" label="Clear Query"/>
     </div>
     <TableSkeleton v-if="loading"/>
     <Table v-if="rows[0] && columns[0]"/>
@@ -35,7 +35,6 @@ import {
   seedTreats,
   seedTodos,
   seedUsers,
-  seedProducts,
   resetRowsAndColumns
 } from "./stores/store.js";
 
@@ -80,6 +79,18 @@ watch(query, () => {
 .main {
   width: 50vw;
   margin: auto;
+}
+
+@media only screen and (max-width: 950px) {
+  .main{
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .clear-query, .run-query{
+    margin-top: 10px;
+  }
 }
 
 
