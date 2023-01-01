@@ -18,7 +18,7 @@ Sequery is an interactive tool for querying, optimizing, and analyzing your SQL 
 
 * used `virtual scrolling` to render a large number of table rows performantly. They only render the minimum number of DOM nodes necessary. Tested with over 1 million rows.
 
-* used `infinit scroll` to fetch more rows as you scroll.
+* used `infinite scroll` to fetch more rows as you scroll.
 
 
 
