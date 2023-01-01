@@ -9,7 +9,6 @@
         virtual-scroll
         :rows-per-page-options="[0]"
         :loading="loading"
-        name="table"
     />
   </div>
 </template>
