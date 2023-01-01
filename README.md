@@ -21,7 +21,7 @@ https://sequery.vercel.app/
 
 * used `virtual scrolling` to render a large number of table rows performantly. They only render the minimum number of DOM nodes necessary. Tested with over 1 million rows.
 
-* used `infinite scroll` to fetch more rows as you scroll.
+* used `infinite scroll` to fetch more rows as you scroll, instead of loading all rows at once.
 
 
 
