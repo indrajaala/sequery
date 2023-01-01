@@ -1,6 +1,9 @@
 # Sequery
 Sequery is an interactive tool for querying, optimizing, and analyzing your SQL data.
 
+### live-demo
+https://sequery.vercel.app/
+
 ## Frameworks and plugins used
 
 * Vue3
