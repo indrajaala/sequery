@@ -18,4 +18,10 @@
   margin-top: -50px;
   font-size: 1.3rem;
 }
+
+@media only screen and (max-width: 950px) {
+  h2{
+    line-height: 2rem;
+  }
+}
 </style>
