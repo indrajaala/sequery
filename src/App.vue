@@ -9,7 +9,7 @@
 
     <div class="row items-center q-mt-lg">
       <q-select filled v-model="query" :options="options" label="Select a query" style="width: 250px"/>
-      <q-btn @click="runQuery" class="q-mx-lg" round color="black" icon="mdi-play"/>
+      <q-btn @click="runQuery" class="q-mx-lg" round color="black" name="run" icon="mdi-play"/>
       <q-btn @click="clearQuery" class="q-ml-auto" color="red" label="Clear Query"/>
     </div>
     <TableSkeleton v-if="loading"/>
