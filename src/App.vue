@@ -91,6 +91,10 @@ watch(query, () => {
   .clear-query, .run-query{
     margin-top: 10px;
   }
+
+  .clear-query{
+    margin-left: 0;
+  }
 }
 
 
