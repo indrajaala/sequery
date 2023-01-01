@@ -1,6 +1,20 @@
-# Vue 3 + Vite
+# Sequery
+Sequery is an interactive tool for querying, optimizing, and analyzing your SQL data.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Frameworks and plugins used
+
+* Vue3
+* Quasar
+* Vite
+
+## Page load time (Google PageSpeed Insights)
+
+![pagespeed](./images/page-speed.png)
+## optimisations
+
+
+
+
 
 ## Recommended IDE Setup
 
