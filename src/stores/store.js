@@ -24,21 +24,6 @@ function seedUsers() {
         });
 }
 
-function seedProducts() {
-    resetRowsAndColumns();
-    loading.value = true;
-    fetch('https://dummyjson.com/products')
-        .then(res => res.json())
-        .then(data => {
-            columns.value = Object.keys(data.products[0]).map((product) => {
-                return {name: product, label: product, field: product, align: 'left'}
-            })
-            rows.value = data.products;
-            loading.value = false
-        });
-}
-
-
 function seedTodos() {
     resetRowsAndColumns();
     loading.value = true;
@@ -199,4 +184,4 @@ function seedTreats() {
 
 }
 
-export {rows, columns, seedUsers, seedTodos, seedProducts, seedTreats,loading, resetRowsAndColumns}
+export {rows, columns, seedUsers, seedTodos, seedTreats,loading, resetRowsAndColumns}

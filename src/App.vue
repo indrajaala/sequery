@@ -43,7 +43,7 @@ import {
 const query = ref(null);
 const code = ref('');
 const options = [
-  'Treats', 'Todos', 'Users', 'Products'
+  'Treats', 'Todos', 'Users'
 ]
 
 function runQuery() {
@@ -55,9 +55,6 @@ function runQuery() {
   }
   if (query.value === "Users") {
     seedUsers()
-  }
-  if (query.value === "Products") {
-    seedProducts()
   }
 }
 
@@ -75,9 +72,6 @@ watch(query, () => {
   }
   if (query.value === "Users") {
     code.value = "SELECT * FROM Users LIMIT 30;"
-  }
-  if (query.value === "Products") {
-    code.value = "SELECT * FROM Products LIMIT 30;"
   }
 })
 </script>
